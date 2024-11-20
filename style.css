@@ -32,7 +32,11 @@ body{
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px; */
 
-    border-radius: 100%;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-top: 2rem;
     
 }
 .header{
