@@ -107,6 +107,27 @@ a:visited
         flex-direction: vertical;
         
     }
-        
-}
-
+    @media only screen and (min-width :700px) and (max-width :1000px)
+    {
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container {
+            width: 50 px;
+            height: 50 px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: vertical;
+        }
+        .header{
+   
+            display: flex;
+            flex-direction:row ;
+            background-color: rgb(64, 15, 110);
+            flex-wrap: wrap;
+            font-size: larger;
+        } 
+    }
+}    
