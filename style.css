@@ -1,133 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
-    background-color:white;
+    background-color: white;
+    overflow-x: hidden;
 }
-
 
 .container {
-    width: 50 px;
-    height: 50 px;
+    width: 100%; /* Adjusted to prevent exceeding viewport width */
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    gap: 1rem; /* Use gap for spacing */
 }
-.item1{
+
+.item1 {
     align-self: center;
     color: black;
 }
-.item2{
-    align-self:center ;
 
-
-}
-.item2 img{
-    /* border-top-left-radius: 50px;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px; */
-
+.item2 img {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
     object-fit: cover;
     padding-top: 2rem;
-    
 }
-.header{
-   
+
+.header {
     display: flex;
-    flex-direction:row ;
+    flex-direction: row;
     background-color: rgb(64, 15, 110);
-    flex-wrap: wrap;
-    width: 100%;
+    align-items: center;
+    width: 100%; /* Ensure it spans the full viewport width */
     height: 8%;
-    padding:0.5em;
-   
-     
-    
+    gap: 1rem;
+    padding: 2rem;
+}
 
-    
-    
-      
+ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row-reverse;
+    gap: 15px;
+    color: white;
 }
-ul
-{
-  display:flex;  
-  list-style:none;
-   flex-direction:row-reverse;
-   gap: 15px;
-   color: white;
-  
-}
-a
-{
-    color:white;
+
+a {
+    color: white;
     font-size: larger;
-
 }
-a:hover
-{
-    color:blue;
+
+a:hover {
+    color: blue;
     box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.8);
-
 }
-a:visited
-{
-    color:bisque;
-}
-@media only screen and (min-width : 300px) and (max-width :600px){
-    *{
-        margin :0;
-        padding:0;
 
-    }
-    .header{
-   
-        display: flex;
-        flex-direction:row ;
-        background-color: rgb(64, 15, 110);
-        flex-wrap: wrap;
-        justify-content: center;
+a:visited {
+    color: bisque;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .header {
+        flex-direction: row;
         justify-content: space-evenly;
         font-size: larger;
     }
-    .container {
-        width: 50 px;
-        height: 50 px;
-        display: flex;
-        align-items: center;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    .header {
         flex-wrap: wrap;
-        flex-direction: vertical;
-        
+        font-size: larger;
     }
-    @media only screen and (min-width :700px) and (max-width :1000px)
-    {
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        .container {
-            width: 50 px;
-            height: 50 px;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            flex-direction: vertical;
-        }
-        .header{
-   
-            display: flex;
-            flex-direction:row ;
-            background-color: rgb(64, 15, 110);
-            flex-wrap: wrap;
-            font-size: larger;
-        } 
-    }
-}    
+}
