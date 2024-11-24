@@ -1,14 +1,54 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 body{
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+}
+.myself{
+    display: flex;
+    flex-wrap:wrap;
+    font-size: larger;
+}
+.images{
+    display: grid;
+    grid-template-rows: repeat(2,0.5fr);
+    grid-template-columns: repeat(2,0.5fr);
+    padding: 2rem;
+    row-gap: 1rem;
+    place-items: center;
     
 }
-body{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+#image1{
+    margin: 0;
+    padding: 0;
+    border:5px solid black;
+    object-fit:contain;
+    background-size: contain;
+}
+#image2{
+    margin: 0;
+    padding: 0;
+    border: 5px solid black;
+    place-self: start;
+    background-size: contain;
+}
+#image3{
+    margin: 0;
+    padding: 0;
+    border: 5px solid black;
+    object-fit: contain;
+    background-size: contain;
+}
+#image4{
+    margin: 0;
+    padding: 0;
+    border: 5px solid black;
+    place-self: start;
+    object-fit: contain;
+    background-size: contain;
 }
